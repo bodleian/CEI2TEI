@@ -705,6 +705,49 @@
       </content>
      </elementSpec>
     </schemaSpec>
+    
+    <!-- changes to availability, copied from TEI msDesc schema -->
+    <elementSpec ident="availability" module="header" mode="change">
+     <attList>
+      <attDef ident="status" mode="replace">
+       <desc>Specifies the availability of a manuscript. This attribute
+        should not be used to specify the availability of manuscript
+        metadata: use the <gi>licence</gi> element for that
+        purpose.</desc>
+       <datatype maxOccurs="unbounded">
+        <dataRef key="teidata.word"/>
+       </datatype>
+       <valList type="closed">
+        <valItem ident="free">
+         <desc>The item is available.</desc>
+        </valItem>
+        <!-- nb: not necessarily permanently restricted -->
+        <valItem ident="restricted">
+         <desc>Access to the item is restricted for conservation or
+          other reasons.</desc>
+        </valItem>
+        <valItem ident="exhibition">
+         <desc>The item is on exhibition at the owning library or
+          another institution, and is likely to be temporarily
+          unavailable.</desc>
+        </valItem>
+        <valItem ident="offsite">
+         <desc>The item is stored offsite, and will take at least
+          twenty-four hours to produce.</desc>
+        </valItem>
+        <valItem ident="printcat">
+         <desc>The item is orderable through a catalogue of printed materials, typically because it is a fragment in a printed book or because it is part of a collection of mostly printed material.</desc>
+        </valItem>
+        <valItem ident="none">
+         <desc>The item cannot be ordered, typically either because it is a stub record or because it is not held by the library which is responsible for the catalogue.</desc>
+        </valItem>
+        <valItem ident="unknown">
+         <desc>Availability of the item is unknown.</desc>
+        </valItem>
+       </valList>
+      </attDef>
+     </attList>
+    </elementSpec>
    </div>
   </body>
  </text>
