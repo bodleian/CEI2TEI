@@ -7388,7 +7388,9 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
                         <value>offsite</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The item is stored offsite, and will take at least twenty-four hours to produce.</a:documentation>
                         <value>seal</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The item is a separate seal or detached seal and needs to be ordered via a separate process.</a:documentation>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The item is a separate seal and needs to be ordered via a separate process.</a:documentation>
+                        <value>detachedSeal</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The detached seal relating to the charter needs to be ordered via a separate process.</a:documentation>
                         <value>printcat</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The item is orderable through a catalogue of printed materials, typically because it is a fragment in a printed book or because it is part of a collection of mostly printed material.</a:documentation>
                         <value>none</value>
